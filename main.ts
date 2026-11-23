@@ -5,7 +5,7 @@
 // 1-minute move has a standard deviation of only ~8 bps while a full-size
 // round trip costs ~26 bps in fees, slippage and impact. Frequent trading
 // therefore bleeds money. This bot trades rarely: it waits until the trend
-// is unmistakable on a 4-hour horizon (the 240-bar return above 1.5% with
+// is unmistakable on a 4-hour horizon (the 240-bar return above 1.0% with
 // the fast EMA above the slow EMA), buys the whole stake once, and then
 // holds through the noise until the price pulls back 3% from its peak since
 // entry (or 5% below the entry). A second, lower entry threshold opens in
@@ -39,7 +39,7 @@ import { runBars, type Bar, type BarsState, type BuyInput, type SellInput } from
 const FAST_BARS = 40;
 const SLOW_BARS = 100;
 const MOM_BARS = 240;
-const TIER1_MOM = 0.008;
+const TIER1_MOM = 0.01;
 const TIER2_MOM = 0.008;
 const TIER2_FROM_BAR = 720;
 const LAST_ENTRY_BAR = 1380;
