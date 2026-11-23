@@ -39,7 +39,7 @@ import { runBars, type Bar, type BarsState, type BuyInput, type SellInput } from
 const FAST_BARS = 40;
 const SLOW_BARS = 100;
 const MOM_BARS = 240;
-const TIER1_MOM = 0.012;
+const TIER1_MOM = 0.01;
 const TIER2_MOM = 0.008;
 const TIER2_FROM_BAR = 720;
 const LAST_ENTRY_BAR = 1380;
